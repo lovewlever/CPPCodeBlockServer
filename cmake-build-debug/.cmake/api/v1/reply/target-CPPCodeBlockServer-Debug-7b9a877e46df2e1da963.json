@@ -1,0 +1,633 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "CPPCodeBlockServer.exe"
+		},
+		{
+			"path" : "CPPCodeBlockServer.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_executable",
+			"add_executable",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"_find_package",
+			"find_package",
+			"find_dependency",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"CMakeLists.txt",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/DrogonTargets.cmake",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/DrogonConfig.cmake",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/FindJsoncpp.cmake",
+			"C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets.cmake",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/protobuf/vcpkg-cmake-wrapper.cmake",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/unofficial-mysql-connector-cpp/unofficial-mysql-connector-cpp-config.cmake",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/jwt-cpp/jwt-cpp-targets.cmake",
+			"E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/jwt-cpp/jwt-cpp-config.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 598,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 6
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 79,
+				"parent" : 8
+			},
+			{
+				"file" : 2,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 60,
+				"parent" : 10
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 39,
+				"parent" : 8
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 76,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 13
+			},
+			{
+				"file" : 4,
+				"parent" : 14
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 65,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 17
+			},
+			{
+				"file" : 9,
+				"parent" : 18
+			},
+			{
+				"command" : 7,
+				"file" : 9,
+				"line" : 30,
+				"parent" : 19
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 76,
+				"parent" : 20
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 813,
+				"parent" : 21
+			},
+			{
+				"file" : 8,
+				"parent" : 22
+			},
+			{
+				"command" : 5,
+				"file" : 8,
+				"line" : 3,
+				"parent" : 23
+			},
+			{
+				"file" : 7,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 7,
+				"line" : 14,
+				"parent" : 25
+			},
+			{
+				"file" : 6,
+				"parent" : 26
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 80,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 859,
+				"parent" : 29
+			},
+			{
+				"file" : 11,
+				"parent" : 30
+			},
+			{
+				"command" : 4,
+				"file" : 11,
+				"line" : 43,
+				"parent" : 31
+			},
+			{
+				"file" : 10,
+				"parent" : 32
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 61,
+				"parent" : 33
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 56,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++latest -MDd -Zi"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4251"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/wd4275"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "ABSL_CONSUME_DLL"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "PROTOBUF_USE_DLLS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 35,
+					"path" : "D:/Documents/CLionProjects/CPPCodeBlockServer/header"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "E:/SDK/vcpkg/vcpkg/installed/x64-windows/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5,
+					36
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				9,
+				14,
+				18,
+				20,
+				22,
+				25,
+				27
+			]
+		}
+	],
+	"id" : "CPPCodeBlockServer::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\drogon.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\mysqlcppconn8.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\libprotocd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\libprotobufd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\libprotobuf-lited.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "rpcrt4.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "crypt32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\trantor.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "advapi32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\jsoncpp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\abseil_dll.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\libssl.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "E:\\SDK\\vcpkg\\vcpkg\\installed\\x64-windows\\debug\\lib\\libcrypto.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "CPPCodeBlockServer",
+	"nameOnDisk" : "CPPCodeBlockServer.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				8,
+				9,
+				14,
+				18,
+				20,
+				22,
+				25,
+				27
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				7,
+				10,
+				11,
+				12,
+				13,
+				15,
+				16,
+				17,
+				19,
+				21,
+				23,
+				24,
+				26,
+				28
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				29
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/controller/UnionController.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/UnionController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/controller/AccountController.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/AccountController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/service/AccountService.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/AccountService.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/common/database/DBCommon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/DBCommon.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "header/common/protobuf/UserInfo.pb.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/common/protobuf/UserInfo.pb.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/common/TokenCommon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/common/ResultCommon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/controller/LinksController.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/LinksController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/service/LinksService.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/common/database/DBLinksCommon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/common/StringCommon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/LinksService.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/controller/ClassifyAndLabelController.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/ClassifyAndLabelController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/service/ClassifyAndLabelService.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/ClassifyAndLabelService.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/common/database/DBClassifyLabelCommon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/controller/CodeBlockController.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/CodeBlockController.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/service/CodeBlockService.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "src/CodeBlockService.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "header/common/database/DBCodeBlockCommon.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 37,
+			"path" : "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_json.natvis",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

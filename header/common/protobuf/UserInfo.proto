@@ -1,0 +1,18 @@
+syntax="proto3";
+package gq;
+// E:\SDK\vcpkg\vcpkg\installed\x64-windows\tools\protobuf\protoc.exe --cpp_out=. .\UserInfo.proto
+message UserInfo {
+  int32 id = 1;
+  string user_name = 2;
+  string user_account = 3;
+  string user_pwd = 4;
+  int32 is_admin = 5;
+  int32 ss_mt = 6;
+  int32 ss_mdi = 7;
+  int32 ss_mcb = 8;
+}
+
+message ResultData {
+    int32 code = 1;
+    string msg = 2;
+}

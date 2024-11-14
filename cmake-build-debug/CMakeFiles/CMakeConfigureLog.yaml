@@ -1,0 +1,406 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: E:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.41.34123 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCCompilerId.c
+      Microsoft (R) Incremental Linker Version 14.41.34123.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCCompilerId.exe 
+      CMakeCCompilerId.obj 
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: E:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.41.34123 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.41.34123.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        注意: 包含文件:  D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9r2h0b"
+      binary: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9r2h0b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "E:/SDK/vcpkg/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/SDK/vcpkg/vcpkg"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9r2h0b'
+        
+        Run Build Command(s): "C:/Program Files/CLion/bin/ninja/win/x64/ninja.exe" -v cmTC_c5f66
+        [1/2] "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_c5f66.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_c5f66.dir\\ /FS -c "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c5f66.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_c5f66.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_c5f66.exe /implib:cmTC_c5f66.lib /pdb:cmTC_c5f66.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z310l4"
+      binary: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z310l4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_INSTALLED_DIR: "E:/SDK/vcpkg/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/SDK/vcpkg/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z310l4'
+        
+        Run Build Command(s): "C:/Program Files/CLion/bin/ninja/win/x64/ninja.exe" -v cmTC_24c0c
+        [1/2] "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_24c0c.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_24c0c.dir\\ /FS -c "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_24c0c.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_24c0c.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_24c0c.exe /implib:cmTC_24c0c.lib /pdb:cmTC_24c0c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/trantor/TrantorConfig.cmake:48 (find_dependency)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/DrogonConfig.cmake:40 (find_dependency)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lehz88"
+      binary: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lehz88"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon;E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/trantor"
+      VCPKG_INSTALLED_DIR: "E:/SDK/vcpkg/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/SDK/vcpkg/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lehz88'
+        
+        Run Build Command(s): "C:/Program Files/CLion/bin/ninja/win/x64/ninja.exe" -v cmTC_9934d
+        [1/2] "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_9934d.dir\\src.c.obj /FdCMakeFiles\\cmTC_9934d.dir\\ /FS -c D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-lehz88\\src.c
+        FAILED: CMakeFiles/cmTC_9934d.dir/src.c.obj 
+        "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_9934d.dir\\src.c.obj /FdCMakeFiles\\cmTC_9934d.dir\\ /FS -c D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-lehz88\\src.c
+        D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-lehz88\\src.c(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/trantor/TrantorConfig.cmake:48 (find_dependency)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/DrogonConfig.cmake:40 (find_dependency)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dfjaqr"
+      binary: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dfjaqr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon;E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/trantor"
+      VCPKG_INSTALLED_DIR: "E:/SDK/vcpkg/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/SDK/vcpkg/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dfjaqr'
+        
+        Run Build Command(s): "C:/Program Files/CLion/bin/ninja/win/x64/ninja.exe" -v cmTC_22842
+        [1/2] "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_22842.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_22842.dir\\ /FS -c D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-dfjaqr\\CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_22842.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_22842.dir\\CheckFunctionExists.c.obj  /out:cmTC_22842.exe /implib:cmTC_22842.lib /pdb:cmTC_22842.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_22842.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_22842.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_22842.dir\\CheckFunctionExists.c.obj  /out:cmTC_22842.exe /implib:cmTC_22842.lib /pdb:cmTC_22842.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_22842.dir\\CheckFunctionExists.c.obj /out:cmTC_22842.exe /implib:cmTC_22842.lib /pdb:cmTC_22842.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_22842.dir/intermediate.manifest CMakeFiles\\cmTC_22842.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/trantor/TrantorConfig.cmake:48 (find_dependency)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/DrogonConfig.cmake:40 (find_dependency)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9wpb9j"
+      binary: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9wpb9j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon;E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/trantor"
+      VCPKG_INSTALLED_DIR: "E:/SDK/vcpkg/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/SDK/vcpkg/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9wpb9j'
+        
+        Run Build Command(s): "C:/Program Files/CLion/bin/ninja/win/x64/ninja.exe" -v cmTC_7437f
+        [1/2] "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_7437f.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_7437f.dir\\ /FS -c D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-9wpb9j\\CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7437f.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_7437f.dir\\CheckFunctionExists.c.obj  /out:cmTC_7437f.exe /implib:cmTC_7437f.lib /pdb:cmTC_7437f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_7437f.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7437f.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_7437f.dir\\CheckFunctionExists.c.obj  /out:cmTC_7437f.exe /implib:cmTC_7437f.lib /pdb:cmTC_7437f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7437f.dir\\CheckFunctionExists.c.obj /out:cmTC_7437f.exe /implib:cmTC_7437f.lib /pdb:cmTC_7437f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_7437f.dir/intermediate.manifest CMakeFiles\\cmTC_7437f.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: 无法打开文件“pthread.lib”\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckIncludeFileCXX.cmake:89 (try_compile)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/FindFilesystem.cmake:162 (check_include_file_cxx)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/DrogonConfig.cmake:70 (find_dependency)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Looking for C++ include filesystem"
+    directories:
+      source: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ayeb0u"
+      binary: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ayeb0u"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon;E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/trantor"
+      VCPKG_INSTALLED_DIR: "E:/SDK/vcpkg/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/SDK/vcpkg/vcpkg"
+    buildResult:
+      variable: "_CXX_FILESYSTEM_HAVE_HEADER"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ayeb0u'
+        
+        Run Build Command(s): "C:/Program Files/CLion/bin/ninja/win/x64/ninja.exe" -v cmTC_464ef
+        [1/2] "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo /TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_464ef.dir\\CheckIncludeFile.cxx.obj /FdCMakeFiles\\cmTC_464ef.dir\\ /FS -c D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ayeb0u\\CheckIncludeFile.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_464ef.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_464ef.dir\\CheckIncludeFile.cxx.obj  /out:cmTC_464ef.exe /implib:cmTC_464ef.lib /pdb:cmTC_464ef.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceRuns.cmake:93 (try_run)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/FindFilesystem.cmake:126 (check_cxx_source_runs)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/FindFilesystem.cmake:220 (_cmcm_check_cxx_source)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/Program Files/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon/DrogonConfig.cmake:70 (find_dependency)"
+      - "E:/SDK/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED"
+    directories:
+      source: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-slh0d0"
+      binary: "D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-slh0d0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/drogon;E:/SDK/vcpkg/vcpkg/installed/x64-windows/share/trantor"
+      VCPKG_INSTALLED_DIR: "E:/SDK/vcpkg/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "E:/SDK/vcpkg/vcpkg"
+    buildResult:
+      variable: "CXX_FILESYSTEM_NO_LINK_NEEDED_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-slh0d0'
+        
+        Run Build Command(s): "C:/Program Files/CLion/bin/ninja/win/x64/ninja.exe" -v cmTC_92c7c
+        [1/2] "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe"  /nologo /TP -DCXX_FILESYSTEM_NO_LINK_NEEDED  /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_92c7c.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_92c7c.dir\\ /FS -c D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-slh0d0\\src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_92c7c.dir --rc="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\rc.exe" --mt="D:\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\mt.exe" --manifests  -- "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_92c7c.dir\\src.cxx.obj  /out:cmTC_92c7c.exe /implib:cmTC_92c7c.lib /pdb:cmTC_92c7c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "CXX_FILESYSTEM_NO_LINK_NEEDED_EXITCODE"
+      cached: true
+      stdout: |
+        D:/Documents/CLionProjects/CPPCodeBlockServer/cmake-build-debug
+      stderr: |
+      exitCode: 0
+...

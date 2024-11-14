@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\CPPCodeBlockServer.dir\\src\\LinksController.cpp.obj",
+            "outputs": [
+                "D:\\Documents\\CLionProjects\\CPPCodeBlockServer\\cmake-build-debug\\vc140.pdb",
+                "CMakeFiles\\CPPCodeBlockServer.dir\\src\\LinksController.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}
