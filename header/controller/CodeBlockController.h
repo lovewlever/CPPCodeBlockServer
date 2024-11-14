@@ -13,9 +13,9 @@ class CodeBlockController final : public drogon::HttpController<CodeBlockControl
 public:
     CodeBlockController();
     METHOD_LIST_BEGIN
-    ADD_METHOD_TO(CodeBlockController::addCodeBlock, "/codeblock/add-codeblock", drogon::Post);
-    ADD_METHOD_TO(CodeBlockController::modifyCodeBlock, "/codeblock/modify-codeblock", drogon::Post);
-    ADD_METHOD_TO(CodeBlockController::search, "/codeblock/search", drogon::Post);
+    ADD_METHOD_TO(CodeBlockController::addCodeBlock, "/codeblock/add-codeblock", drogon::Post, "TokenFilter");
+    ADD_METHOD_TO(CodeBlockController::modifyCodeBlock, "/codeblock/modify-codeblock", drogon::Post, "TokenFilter");
+    ADD_METHOD_TO(CodeBlockController::search, "/codeblock/search", drogon::Post, "TokenFilter");
     // 查询已删除的CodeBlock
     //ADD_METHOD_TO(CodeBlockController::queryMineDeleteCB, "/user/query-mine-delete-cb", drogon::Post);
     // 查询私有的CodeBlock

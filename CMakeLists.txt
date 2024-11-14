@@ -42,6 +42,8 @@ add_executable(CPPCodeBlockServer main.cpp
         header/service/CodeBlockService.h
         src/CodeBlockService.cpp
         header/common/database/DBCodeBlockCommon.h
+        header/common/filter/TokenFilter.h
+        src/TokenFilter.cpp
 )
 
 target_link_libraries(CPPCodeBlockServer PRIVATE Drogon::Drogon)

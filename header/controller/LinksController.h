@@ -14,10 +14,10 @@ private:
     public:
     LinksController();
     METHOD_LIST_BEGIN;
-    ADD_METHOD_TO(LinksController::queryLinks, "/link/query_links", drogon::Post);
-    ADD_METHOD_TO(LinksController::addLink, "/link/add-link", drogon::Post);
-    ADD_METHOD_TO(LinksController::deleteLinkById, "/link/delete_link_by_id", drogon::Post);
-    ADD_METHOD_TO(LinksController::modifyLink, "/link/modify_link", drogon::Post);
+    ADD_METHOD_TO(LinksController::queryLinks, "/link/query_links", drogon::Post, "TokenFilter");
+    ADD_METHOD_TO(LinksController::addLink, "/link/add-link", drogon::Post, "TokenFilter");
+    ADD_METHOD_TO(LinksController::deleteLinkById, "/link/delete_link_by_id", drogon::Post, "TokenFilter");
+    ADD_METHOD_TO(LinksController::modifyLink, "/link/modify_link", drogon::Post, "TokenFilter");
     METHOD_LIST_END;
     void queryLinks(const drogon::HttpRequestPtr &req, std::function<void(const drogon::HttpResponsePtr &)> &&callback);
     void addLink(const drogon::HttpRequestPtr &req, std::function<void(const drogon::HttpResponsePtr &)> &&callback);

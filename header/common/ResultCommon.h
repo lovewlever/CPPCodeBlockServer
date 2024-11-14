@@ -17,7 +17,9 @@ enum ResultDataCode
     PASSWORD_FAIL = 1001,
     DATA_IS_EMPTY = 1002,
     PARAMS_FAIL = 1003,
-    INSERT_FAIL = 1005
+    INSERT_FAIL = 1005,
+    LoginExpired = 4089
+
 };
 
 class ResultCommon

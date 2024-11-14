@@ -14,10 +14,10 @@ private:
 public:
     ClassifyAndLabelController();
     METHOD_LIST_BEGIN
-    ADD_METHOD_TO(ClassifyAndLabelController::queryClassifyList, "/classify/query-classify-list", drogon::Post);
-    ADD_METHOD_TO(ClassifyAndLabelController::queryLabelListByClassId, "/label/query-label-by-class-id", drogon::Post);
-    ADD_METHOD_TO(ClassifyAndLabelController::addAClassify, "/classify/add-classify", drogon::Post);
-    ADD_METHOD_TO(ClassifyAndLabelController::addALabel, "/label/add-label", drogon::Post);
+    ADD_METHOD_TO(ClassifyAndLabelController::queryClassifyList, "/classify/query-classify-list", drogon::Post, "TokenFilter");
+    ADD_METHOD_TO(ClassifyAndLabelController::queryLabelListByClassId, "/label/query-label-by-class-id", drogon::Post, "TokenFilter");
+    ADD_METHOD_TO(ClassifyAndLabelController::addAClassify, "/classify/add-classify", drogon::Post, "TokenFilter");
+    ADD_METHOD_TO(ClassifyAndLabelController::addALabel, "/label/add-label", drogon::Post, "TokenFilter");
     METHOD_LIST_END
 
     void queryClassifyList(const drogon::HttpRequestPtr &req,
