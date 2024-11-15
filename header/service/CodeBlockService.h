@@ -25,6 +25,9 @@ public:
                                 const std::string &matchDesc,
                                 const std::string &matchContent);
 
+    std::string codeBlockDeprecated(const int32_t &uId, const std::string &blockId, const std::string &deprecated, const std::string &deprecatedReason);
+
+    std::string modifyVisibility(const int32_t &uId, const std::string &blockId, const std::string &visibility);
     //std::string searchCodeBlock();
 };
 #endif //CODEBLOCKSERVICE_H

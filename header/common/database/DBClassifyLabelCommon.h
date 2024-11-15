@@ -25,8 +25,8 @@ public:
         {
             nlohmann::json j;
             j["id"] = id;
-            j["classification_name"] = classification_name;
-            j["add_time"] = add_time;
+            j["classificationName"] = classification_name;
+            j["addTime"] = add_time;
             j["refTcbLabelEntities"] = refTcbLabelEntities;
             return j;
         }
@@ -103,8 +103,8 @@ WHERE
 
             nlohmann::json tl;
             tl["id"] = tlId;
-            tl["add_time"] = tlAddTime;
-            tl["label_name"] = tlLabelName;
+            tl["addTime"] = tlAddTime;
+            tl["labelName"] = tlLabelName;
 
             refTcbLabelEntities.push_back(tl);
         }
@@ -136,8 +136,8 @@ inline std::vector<nlohmann::json> DBClassifyLabelCommon::queryLabelListByClassi
     {
         auto id = (*ite)[0].get<int32_t>();
         auto addTime = (*ite)[1].get<int64_t>();
-        auto className = (*ite)[2].get<std::string>();
-        nlohmann::json item{{"id", id}, {"addTime", addTime}, {"classificationName", className}};
+        auto labelName = (*ite)[2].get<std::string>();
+        nlohmann::json item{{"id", id}, {"addTime", addTime}, {"labelName", labelName}};
         result.push_back(item);
     }
     return result;

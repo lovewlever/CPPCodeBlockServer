@@ -23,6 +23,10 @@ AccountService::~AccountService()
 std::string AccountService::signIn(const std::string& account, const std::string& password)
 {
     std::cout << account << "  " << password << std::endl;
+    if (account.empty() || password.empty())
+    {
+        return ResultCommon::generateResultJson(PASSWORD_FAIL, "账号或密码不能为空！");
+    }
     const auto db = DBCommon::getInstance();
     const auto userInfo = db->queryUserInfoByUserAccount(account);
     int32_t uid = -1;
@@ -30,6 +34,9 @@ std::string AccountService::signIn(const std::string& account, const std::string
     {
         std::cout << "UserId:" << userInfo.id() << std::endl;
         uid = userInfo.id();
+    } else
+    {
+        return ResultCommon::generateResultJson(PASSWORD_FAIL, "账号或密码错误！");
     }
 
     std::cout << uid << std::endl;

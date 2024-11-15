@@ -15,9 +15,9 @@ private:
     std::unique_ptr<AccountService>  _accountService{nullptr};
 public:
     METHOD_LIST_BEGIN
-    ADD_METHOD_TO(AccountController::signIn, "/api/user/sign-in", drogon::Post);
-    ADD_METHOD_TO(AccountController::signUp, "/api/user/register", drogon::Post);
-    ADD_METHOD_TO(AccountController::queryUserByUserId, "/api/user/query-user-by-uid", drogon::Post);
+    ADD_METHOD_TO(AccountController::signIn, "/api/user/sign-in", drogon::Options, drogon::Post, "CorsMiddleware");
+    ADD_METHOD_TO(AccountController::signUp, "/api/user/register", drogon::Post, "CorsMiddleware");
+    ADD_METHOD_TO(AccountController::queryUserByUserId, "/api/user/query-user-by-uid", drogon::Options, drogon::Post, "CorsMiddleware", "TokenFilter");
     METHOD_LIST_END
 
     AccountController();

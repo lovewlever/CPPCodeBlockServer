@@ -46,3 +46,19 @@ std::string CodeBlockService::searchCodeBlock(const std::string &kw, const std::
     std::cout << json.dump() << std::endl;
     return ResultCommon::generateResultJson(res);
 }
+
+std::string CodeBlockService::codeBlockDeprecated(const int32_t &uId, const std::string &blockId, const std::string &deprecated,
+    const std::string &deprecatedReason)
+{
+    const auto db = DBCodeBlockCommon::getInstance();
+    const auto [fst, snd] = db->codeBlockDeprecated(uId, std::stoi(blockId), std::stoi(deprecated), deprecatedReason);
+    return ResultCommon::generateResultJson(fst ? SUCCESS : ResultDataCode::INSERT_FAIL, snd);
+}
+
+std::string CodeBlockService::modifyVisibility(const int32_t &uId, const std::string &blockId,
+    const std::string &visibility)
+{
+    const auto db = DBCodeBlockCommon::getInstance();
+    const auto [fst, snd] = db->modifyVisibility(uId, std::stoi(blockId), std::stoi(visibility));
+    return ResultCommon::generateResultJson(fst ? SUCCESS : ResultDataCode::INSERT_FAIL, snd);
+}

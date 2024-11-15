@@ -44,6 +44,8 @@ add_executable(CPPCodeBlockServer main.cpp
         header/common/database/DBCodeBlockCommon.h
         header/common/filter/TokenFilter.h
         src/TokenFilter.cpp
+        header/common/filter/CorsMiddleware.h
+        src/CorsMiddleware.cpp
 )
 
 target_link_libraries(CPPCodeBlockServer PRIVATE Drogon::Drogon)

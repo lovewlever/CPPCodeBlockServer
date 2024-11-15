@@ -1,6 +1,7 @@
 //
 // Created by catog on 2024/11/12.
 //
+#include <execution>
 #include <controller/AccountController.h>
 #include <common/TokenCommon.h>
 #include <json/json.h>
@@ -18,9 +19,12 @@ AccountController::~AccountController()
 void AccountController::signIn(const drogon::HttpRequestPtr &req,
                                std::function<void(const drogon::HttpResponsePtr &)> &&callback)
 {
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+    const auto account = parser.getParameter<std::string>("account");
+    const auto pwd = parser.getParameter<std::string>("pwd");
+
     auto tokenCommonPtr = TokenCommon::getInstance();
-    const auto account = req->getParameter("account");
-    const auto pwd = req->getParameter("pwd");
     const auto str = _accountService->signIn(account, pwd);
 
     std::istringstream i{str};

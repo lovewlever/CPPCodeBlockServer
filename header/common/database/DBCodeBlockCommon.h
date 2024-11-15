@@ -70,6 +70,9 @@ public:
                                                             const int32_t &userId,
                                                             const int32_t &matchDesc,
                                                             const int32_t &matchContent);
+
+    std::pair<bool, std::string> codeBlockDeprecated(const int32_t &uId, const int32_t &blockId, const int32_t &deprecated, const std::string &deprecatedReason);
+    std::pair<bool, std::string> modifyVisibility(const int32_t &uId, const int32_t &blockId, const int32_t &visibility);
 };
 
 inline DBCodeBlockCommon::DBCodeBlockCommon(): DBCommon()
@@ -298,5 +301,38 @@ inline std::vector<nlohmann::json> DBCodeBlockCommon::searchCodeBlock(
     }
 
     return resultsJson;
+}
+
+inline std::pair<bool, std::string> DBCodeBlockCommon::codeBlockDeprecated(
+    const int32_t &uId,
+    const int32_t &blockId,
+    const int32_t &deprecated, const std::string &deprecatedReason)
+{
+    auto table = session.getSchema(dbSchema).getTable("tcb_content");
+    const auto result = table.update().set("deprecated", deprecated).set("deprecated_reason", deprecatedReason)
+    .where("id=:id AND user_id=:uId")
+    .bind("id", blockId)
+    .bind("uId", uId).execute();
+    if (result.getAffectedItemsCount() == 1)
+    {
+        return std::make_pair(true, "Success");
+    }
+    return std::make_pair(false, "更新失败！");
+
+}
+
+inline std::pair<bool, std::string> DBCodeBlockCommon::modifyVisibility(const int32_t &uId, const int32_t &blockId,
+    const int32_t &visibility)
+{
+    auto table = session.getSchema(dbSchema).getTable("tcb_content");
+    const auto result = table.update().set("visibility", visibility)
+    .where("id=:id AND user_id=:uId")
+    .bind("id", blockId)
+    .bind("uId", uId).execute();
+    if (result.getAffectedItemsCount() == 1)
+    {
+        return std::make_pair(true, "Success");
+    }
+    return std::make_pair(false, "更新失败！");
 }
 #endif //DBCODEBLOCKCOMMON_H

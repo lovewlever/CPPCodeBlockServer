@@ -23,8 +23,10 @@ void LinksController::queryLinks(const drogon::HttpRequestPtr &req,
 void LinksController::addLink(const drogon::HttpRequestPtr &req,
     std::function<void(const drogon::HttpResponsePtr &)> &&callback)
 {
-    const auto name = req->getParameter("name");
-    const auto link = req->getParameter("link");
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+    const auto name = parser.getParameter<std::string>("name");
+    const auto link = parser.getParameter<std::string>("link");
     const auto token = req->getHeader("token");
     const auto uId = TokenCommon::getInstance()->parseTokenGetUid(token);
     const auto sss = linkServicePtr->addLink(uId, name, link);
@@ -34,7 +36,9 @@ void LinksController::addLink(const drogon::HttpRequestPtr &req,
 void LinksController::deleteLinkById(const drogon::HttpRequestPtr &req,
     std::function<void(const drogon::HttpResponsePtr &)> &&callback)
 {
-    const auto linkId = req->getParameter("id");
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+    const auto linkId = parser.getParameter<std::string>("id");
     const auto token = req->getHeader("token");
     const auto uId = TokenCommon::getInstance()->parseTokenGetUid(token);
     const auto sss = linkServicePtr->deleteLinkById(uId, std::stoi(linkId));
@@ -44,9 +48,11 @@ void LinksController::deleteLinkById(const drogon::HttpRequestPtr &req,
 void LinksController::modifyLink(const drogon::HttpRequestPtr &req,
     std::function<void(const drogon::HttpResponsePtr &)> &&callback)
 {
-    const auto linkId = req->getParameter("id");
-    const auto name = req->getParameter("name");
-    const auto link = req->getParameter("link");
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+    const auto linkId = parser.getParameter<std::string>("id");
+    const auto name = parser.getParameter<std::string>("name");
+    const auto link = parser.getParameter<std::string>("link");
     const auto token = req->getHeader("token");
     const auto uId = TokenCommon::getInstance()->parseTokenGetUid(token);
     const auto sss = linkServicePtr->modifyLink(uId, std::stoi(linkId), name, link);

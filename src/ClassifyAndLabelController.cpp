@@ -15,9 +15,11 @@ ClassifyAndLabelController::ClassifyAndLabelController(): _service{std::make_uni
 void ClassifyAndLabelController::queryClassifyList(const drogon::HttpRequestPtr &req,
                                                    std::function<void(const drogon::HttpResponsePtr &)> &&callback) const
 {
-    const auto isContainLabel = req->getParameter("isContainLabel");
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+    const auto isContainLabel = parser.getParameter<std::string>("isContainLabel");
     int32_t isContL = 0;
-    if (isContainLabel == "1")
+    if (isContainLabel.empty() || isContainLabel == "1")
     {
         isContL = 1;
     }
@@ -30,7 +32,10 @@ void ClassifyAndLabelController::queryLabelListByClassId(const drogon::HttpReque
     std::function<void(const drogon::HttpResponsePtr &)> &&callback) const
 {
 
-    const auto classId = req->getParameter("classId");
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+
+    const auto classId = parser.getParameter<std::string>("classId");
     const auto token = req->getHeader("token");
     const auto uId = TokenCommon::getInstance()->parseTokenGetUid(token);
     const auto resultJson = _service->queryLabelListByClassifyId(uId, std::stoi(classId));
@@ -41,7 +46,10 @@ void ClassifyAndLabelController::queryLabelListByClassId(const drogon::HttpReque
 void ClassifyAndLabelController::addAClassify(const drogon::HttpRequestPtr &req,
     std::function<void(const drogon::HttpResponsePtr &)> &&callback) const
 {
-    const auto className = req->getParameter("name");
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+
+    const auto className = parser.getParameter<std::string>("name");
     const auto token = req->getHeader("token");
     const auto uId = TokenCommon::getInstance()->parseTokenGetUid(token);
     const auto res = _service->addAClassify(uId, className);
@@ -51,8 +59,11 @@ void ClassifyAndLabelController::addAClassify(const drogon::HttpRequestPtr &req,
 void ClassifyAndLabelController::addALabel(const drogon::HttpRequestPtr &req,
     std::function<void(const drogon::HttpResponsePtr &)> &&callback) const
 {
-    const auto classId = req->getParameter("classId");
-    const auto labelName = req->getParameter("labelName");
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+
+    const auto classId =  parser.getParameter<std::string>("classId");
+    const auto labelName =  parser.getParameter<std::string>("labelName");
     const auto token = req->getHeader("token");
     const auto uId = TokenCommon::getInstance()->parseTokenGetUid(token);
     const auto res = _service->addALabel(uId, std::stoi(classId), labelName);
