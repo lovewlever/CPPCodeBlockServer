@@ -6,6 +6,8 @@
 #include <common/TokenCommon.h>
 #include <json/json.h>
 
+#include "common/StringCommon.h"
+
 AccountController::AccountController(): _accountService{std::make_unique<AccountService>()}
 {
     std::cout << "AccountController::AccountController()" << std::endl;
@@ -37,6 +39,15 @@ void AccountController::signIn(const drogon::HttpRequestPtr &req,
 void AccountController::signUp(const drogon::HttpRequestPtr &req,
     std::function<void(const drogon::HttpResponsePtr &)> &&callback)
 {
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+    const auto account = parser.getParameter<std::string>("userAccount");
+    const auto pwd = parser.getParameter<std::string>("userPwd");
+    const auto uName = parser.getParameter<std::string>("userName");
+    auto tokenCommonPtr = TokenCommon::getInstance();
+    const auto str = _accountService->signUp(account, pwd, uName);
+    const auto resp = StringCommon::toHttpJsonResponse(str);
+    callback(resp);
 }
 
 void AccountController::queryUserByUserId(const drogon::HttpRequestPtr &req,

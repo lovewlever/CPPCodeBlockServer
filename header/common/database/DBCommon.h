@@ -33,5 +33,10 @@ public:
     gq::UserInfo queryUserInfoByUserName(const std::string &userName);
     gq::UserInfo queryUserInfoByUserAccount(const std::string &userAccount);
 
+    std::pair<bool, std::string> signUp(const std::string &account, const std::string &password, const std::string &userName);
+
+    bool accountIsExist(const std::string &account);
+    bool userNameIsExist(const std::string &uName);
+
 };
 #endif //DBCOMMON_H

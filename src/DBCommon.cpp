@@ -83,6 +83,10 @@ gq::UserInfo DBCommon::queryUserInfoByUserAccount(const std::string &userAccount
     auto rowsResult = table.select("id","user_account", "user_pwd").where("user_account='" + userAccount + "'").execute();
     if (rowsResult.count() <= 0)
     {
+        rowsResult = table.select("id","user_name", "user_pwd").where("user_name='" + userAccount + "'").execute();
+    }
+    if (rowsResult.count() <= 0)
+    {
         return gq::UserInfo{};
     }
     auto row = rowsResult.fetchOne();
@@ -94,4 +98,33 @@ gq::UserInfo DBCommon::queryUserInfoByUserAccount(const std::string &userAccount
     userInfo.set_user_pwd(userPwd);
     userInfo.set_id(uId);
     return userInfo;
+}
+
+std::pair<bool, std::string> DBCommon::signUp(const std::string &account, const std::string &password,
+    const std::string &userName)
+{
+
+    auto table = session.getSchema(dbSchema).getTable("tcb_user");
+    const auto rowsResult = table.insert("user_name", "user_account", "user_pwd", "is_admin", "ss_mt", "ss_mdi", "ss_mcb")
+                                    .values(userName, account, password, 0, 1, 0, 0).execute();
+    if (rowsResult.getAffectedItemsCount() == 1)
+    {
+        return std::make_pair(true, "Success");
+    }
+    return std::make_pair(false, "注册失败！！");
+
+}
+
+bool DBCommon::accountIsExist(const std::string &account)
+{
+    auto table = session.getSchema(dbSchema).getTable("tcb_user");
+    auto result = table.select("COUNT(0)").where("user_account=:account").bind("account", account).execute();
+    return result.fetchOne()[0].get<int32_t>() > 0;
+}
+
+bool DBCommon::userNameIsExist(const std::string &uName)
+{
+    auto table = session.getSchema(dbSchema).getTable("tcb_user");
+    auto result = table.select("COUNT(0)").where("user_name=:uName").bind("uName", uName).execute();
+    return result.fetchOne()[0].get<int32_t>() > 0;
 }

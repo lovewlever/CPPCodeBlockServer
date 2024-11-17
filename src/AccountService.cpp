@@ -29,6 +29,10 @@ std::string AccountService::signIn(const std::string& account, const std::string
     }
     const auto db = DBCommon::getInstance();
     const auto userInfo = db->queryUserInfoByUserAccount(account);
+    if (userInfo.user_pwd().empty())
+    {
+        return ResultCommon::generateResultJson(PASSWORD_FAIL, "未找到用户！");
+    }
     int32_t uid = -1;
     if (userInfo.user_pwd() == password)
     {
@@ -62,4 +66,23 @@ std::string AccountService::queryUserInfoByUId(int32_t uid)
     auto a = google::protobuf::util::MessageToJsonString(*uInfo, &uInfoJsonStr);
     const std::vector vec{nlohmann::json::parse(uInfoJsonStr)};
     return ResultCommon::generateResultJson(vec);
+}
+
+std::string AccountService::signUp(const std::string &account, const std::string &password, const std::string &userName)
+{
+    if (account.empty() || password.empty() || userName.empty())
+    {
+        return ResultCommon::generateResultJson(PARAMS_FAIL, "参数错误!");
+    }
+    if (password.length() < 6)
+    {
+        return ResultCommon::generateResultJson(PARAMS_FAIL, "密码不能少于6位!");
+    }
+    const auto db = DBCommon::getInstance();
+    if (db->accountIsExist(account) || db->userNameIsExist(userName))
+    {
+        return ResultCommon::generateResultJson(INSERT_FAIL, "用户名或账号已存在！");
+    }
+    const auto [fst, snd] = db->signUp(account, password, userName);
+    return ResultCommon::generateResultJson(fst ? SUCCESS : PARAMS_FAIL, snd);
 }

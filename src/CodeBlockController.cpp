@@ -103,8 +103,20 @@ void CodeBlockController::codeBlockDeprecated(const drogon::HttpRequestPtr &req,
     callback(StringCommon::toHttpJsonResponse(resJson));
 }
 
-void CodeBlockController::modifyVisibility(const drogon::HttpRequestPtr &req,
+void CodeBlockController::codeBlockDelete(const drogon::HttpRequestPtr &req,
     std::function<void(const drogon::HttpResponsePtr &)> &&callback)
+{
+    drogon::MultiPartParser parser{};
+    parser.parse(req);
+    const auto blockId = parser.getParameter<int32_t>("id");
+    const auto token = req->getHeader("token");
+    const auto uId = TokenCommon::getInstance()->parseTokenGetUid(token);
+    const auto resJson = _servicePtr->codeBlockDelete(uId, blockId);
+    callback(StringCommon::toHttpJsonResponse(resJson));
+}
+
+void CodeBlockController::modifyVisibility(const drogon::HttpRequestPtr &req,
+                                           std::function<void(const drogon::HttpResponsePtr &)> &&callback)
 {
     drogon::MultiPartParser parser{};
     parser.parse(req);

@@ -62,3 +62,10 @@ std::string CodeBlockService::modifyVisibility(const int32_t &uId, const std::st
     const auto [fst, snd] = db->modifyVisibility(uId, std::stoi(blockId), std::stoi(visibility));
     return ResultCommon::generateResultJson(fst ? SUCCESS : ResultDataCode::INSERT_FAIL, snd);
 }
+
+std::string CodeBlockService::codeBlockDelete(const int32_t &uId, const int32_t &blockId)
+{
+    const auto db = DBCodeBlockCommon::getInstance();
+    const auto [fst, snd] = db->codeBlockDelete(uId, blockId);
+    return ResultCommon::generateResultJson(fst ? SUCCESS : ResultDataCode::DeleteFail, snd);
+}

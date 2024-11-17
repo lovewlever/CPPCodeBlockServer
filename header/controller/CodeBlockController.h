@@ -22,7 +22,7 @@ public:
     //ADD_METHOD_TO(CodeBlockController::queryMinePrivateCB, "/user/query-mine-private-cb", drogon::Post);
     // 代码块标记过时
     ADD_METHOD_TO(CodeBlockController::codeBlockDeprecated, "/api/codeblock/modify-deprecated", drogon::Options, drogon::Post, "CorsMiddleware", "TokenFilter");
-    //ADD_METHOD_TO(CodeBlockController::codeBlockDelete, "/codeblock/modify-delete", drogon::Post);
+    ADD_METHOD_TO(CodeBlockController::codeBlockDelete, "/api/codeblock/modify-delete", drogon::Options, drogon::Post, "CorsMiddleware", "TokenFilter");
     // 彻底删除代码块
     //ADD_METHOD_TO(CodeBlockController::codeBlockRemoveCompletely, "/codeblock/remove-completely", drogon::Post);
     // 私有或公开代码
@@ -37,7 +37,7 @@ public:
     //void queryMinePrivateCB(const drogon::HttpRequestPtr &req,std::function<void(const drogon::HttpResponsePtr &)> &&callback);
     void codeBlockDeprecated(const drogon::HttpRequestPtr &req,std::function<void(const drogon::HttpResponsePtr &)> &&callback);
 
-    //void codeBlockDelete(const drogon::HttpRequestPtr &req,std::function<void(const drogon::HttpResponsePtr &)> &&callback);
+    void codeBlockDelete(const drogon::HttpRequestPtr &req,std::function<void(const drogon::HttpResponsePtr &)> &&callback);
     //void codeBlockRemoveCompletely(const drogon::HttpRequestPtr &req,std::function<void(const drogon::HttpResponsePtr &)> &&callback);
     void modifyVisibility(const drogon::HttpRequestPtr &req,std::function<void(const drogon::HttpResponsePtr &)> &&callback);
 };

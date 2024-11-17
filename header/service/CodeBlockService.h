@@ -28,6 +28,8 @@ public:
     std::string codeBlockDeprecated(const int32_t &uId, const std::string &blockId, const std::string &deprecated, const std::string &deprecatedReason);
 
     std::string modifyVisibility(const int32_t &uId, const std::string &blockId, const std::string &visibility);
+
+    std::string codeBlockDelete(const int32_t &uId, const int32_t &blockId);
     //std::string searchCodeBlock();
 };
 #endif //CODEBLOCKSERVICE_H

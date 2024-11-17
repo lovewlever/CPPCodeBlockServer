@@ -73,6 +73,7 @@ public:
 
     std::pair<bool, std::string> codeBlockDeprecated(const int32_t &uId, const int32_t &blockId, const int32_t &deprecated, const std::string &deprecatedReason);
     std::pair<bool, std::string> modifyVisibility(const int32_t &uId, const int32_t &blockId, const int32_t &visibility);
+    std::pair<bool, std::string> codeBlockDelete(const int32_t &uId, const int32_t &blockId);
 };
 
 inline DBCodeBlockCommon::DBCodeBlockCommon(): DBCommon()
@@ -326,6 +327,20 @@ inline std::pair<bool, std::string> DBCodeBlockCommon::modifyVisibility(const in
 {
     auto table = session.getSchema(dbSchema).getTable("tcb_content");
     const auto result = table.update().set("visibility", visibility)
+    .where("id=:id AND user_id=:uId")
+    .bind("id", blockId)
+    .bind("uId", uId).execute();
+    if (result.getAffectedItemsCount() == 1)
+    {
+        return std::make_pair(true, "Success");
+    }
+    return std::make_pair(false, "更新失败！");
+}
+
+inline std::pair<bool, std::string> DBCodeBlockCommon::codeBlockDelete(const int32_t &uId, const int32_t &blockId)
+{
+    auto table = session.getSchema(dbSchema).getTable("tcb_content");
+    const auto result = table.update().set("is_delete", 1)
     .where("id=:id AND user_id=:uId")
     .bind("id", blockId)
     .bind("uId", uId).execute();

@@ -16,6 +16,7 @@ public:
 
     std::string signIn(const std::string& account, const std::string& password);
     std::string queryUserInfoByUId(int32_t uid);
+    std::string signUp(const std::string& account, const std::string& password, const std::string& userName);
 };
 
 #endif //ACCOUNTSERVICE_H
